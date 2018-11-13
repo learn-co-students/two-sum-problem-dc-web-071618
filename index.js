@@ -112,6 +112,7 @@ function removeDuplicates(array) {
 function hashTwoSum(array, sum) {
   let twoSums = [];
   let hash = {};
+  //hash will be formatted {difference: value}
   for (let i = 0; i < array.length; i++) {
     if (hash[array[i]] !== undefined) {
       twoSums.push([hash[array[i]], array[i]]);
